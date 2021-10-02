@@ -1,0 +1,37 @@
+{
+  "name": "@charuru/sar",
+  "version": "0.2.10",
+  "contributors": [
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charuru/sar.git"
+  },
+  "engines": {
+    "node": ">=11"
+  },
+  "scripts": {
+    "pretest": "istanbul cover node_modules/mocha/bin/_mocha",
+    "test": "mocha",
+    "posttest": "eslint ./index.js ./lib"
+  },
+  "dependencies": {
+    "bluebird": "3.5",
+    "lodash": "4.17.11",
+    "moment": "2.22",
+    "weighted-random-object": "1.0.6"
+  },
+  "peerDependencies": {
+    "mongoose": "4.x"
+  },
+  "devDependencies": {
+    "eslint": "3.13",
+    "istanbul": "0.4.5",
+    "mocha": "3.1",
+    "mocha-lcov-reporter": "0.0.2",
+    "mochawesome": "1.5",
+    "mongoose": "4.x",
+    "should": "11.1"
+  }
+}
